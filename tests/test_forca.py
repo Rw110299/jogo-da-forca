@@ -5,7 +5,7 @@ import os
 # Caminho absoluto para a pasta 'jogo_da_forca/cod'
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'jogo_da_forca', 'cod')))
 
-from forc import exibir_palavra, escolher_palavra
+from cod.forc import exibir_palavra, escolher_palavra
 ARQUIVO_PALAVRAS = os.path.join(os.path.dirname(__file__), "palavras.txt")
 
 def carregar_palavras_txt(caminho=ARQUIVO_PALAVRAS):
