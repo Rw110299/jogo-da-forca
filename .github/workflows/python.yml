@@ -17,7 +17,7 @@ jobs:
         run: pip install -r requirements.txt || true
 
       - name: Run tests
-        working-directory: ./jogo_da_forca
         env:
-          PYTHONPATH: ${{ github.workspace }}/jogo_da_forca
-        run: python -m unittest discover ../tests
+          PYTHONPATH: ${{ github.workspace }}
+        run: python -m unittest discover tests
+
