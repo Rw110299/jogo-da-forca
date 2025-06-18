@@ -18,4 +18,6 @@ jobs:
 
       - name: Run tests
         working-directory: ./jogo_da_forca
+        env:
+          PYTHONPATH: ${{ github.workspace }}/jogo_da_forca
         run: python -m unittest discover ../tests
