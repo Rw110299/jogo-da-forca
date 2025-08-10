@@ -1,0 +1,20 @@
+[project]
+name = "jogo_da_forca"
+version = "0.1.0"
+description = "Um jogo da forca simples em Python"
+authors = [
+    { name="Richard Souza", email="richardwillianmirandadesouza@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.urls]
+"GitHub" = "https://github.com/Rw110299/jogo_da_forca"
+
+[tool.setuptools]
+packages = ["doc"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
